@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
+import ExampleComponent from './ExampleComponent';
 
 function App() {
   const [buttonText, setButtonText] = useState('click');
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <Container>
+      <ExampleComponent />
       <div className="container mt-5">
         <div className="text-center">
           <h1>{count}</h1>
